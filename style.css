@@ -4,7 +4,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #072F4E;
+  background-color: #2B2F33;
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,14 +36,14 @@ li.nav a  {
 
 /* This is the control for when the mouse hovers over */
 li.nav:hover {
-  background-color: #111;
+  background-color: Black;
 }
 
 /* text display */
 
 body {
 
-   background-image: url("imagebgsmall.jpg");
+   background-image: url("imagebg.jpeg");
    color: white;
    background-color: #07194E;
    background-repeat: no-repeat, repeat;
