@@ -12,6 +12,8 @@ ul.nav {
 
 }
 
+
+
  @media (max-width: 850px) {
    ul.nav {
      position: relative;
@@ -180,7 +182,7 @@ li.p {
 
 img {
   padding: 1em;
-  width: 20%;
+  height: 15em;
 }
 
 /* Mobile alterations to image */
