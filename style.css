@@ -4,11 +4,12 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #2B2F33;
+
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+
 
 }
 
@@ -17,13 +18,32 @@ ul.nav {
  @media (max-width: 850px) {
    ul.nav {
      position: relative;
+   }
+   li.nav{
+     padding-left: 5em;
  }
 }
 li.nav {
-  float: left;
+  float: right;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   font-stretch: ultra-expanded;
 }
+
+li.name{
+  float left;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 1em 3em;
+  text-decoration: none!important;
+  font-size: 1.5em;
+}
+li.name:link{
+  text-decoration: none!important;
+
+}
+
+
 
 li.nav a  {
   display: block;
@@ -92,8 +112,18 @@ h1 {
 padding-top: 15%;
 font-size: 5em;
 text-align: center;
-}
+position: sticky;
 
+}
+.exclamation-word{
+  text-decoration: underline;
+
+  background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent
+
+
+}
 
 
 /* MOBILE VIEW */
@@ -202,8 +232,7 @@ img {
 
 
 
-
-
+/* footer css */
 
 
 footer{
@@ -293,4 +322,9 @@ footer{
     text-align: center;
 
   }
+}
+
+
+em {
+  text-decoration: underline!important;
 }
