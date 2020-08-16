@@ -21,6 +21,9 @@ ul.nav {
    }
    li.nav{
      padding-left: 5em;
+   }
+  li.button{
+   visibility: visible;
  }
 }
 li.nav {
@@ -43,6 +46,9 @@ li.name:link{
 
 }
 
+li.button{
+  visibility: hidden;
+}
 
 
 li.nav a  {
@@ -247,81 +253,6 @@ footer{
       padding-left: 2em;
       padding-right: 2em;
 
-}
-
-
-
-
-
-
-
-
-
-  /* The below css is for the video */
-
-.VideoBox{
-      font-family: arial;
-     font-size: 1em;
-     position: relative;
-     padding-top: 1em;
-     border: 0.3em solid white;
-     background-color: #6E6E6E;
-
-
-   }
-.VideoBox p {
-  vertical-align: bottom;
-  float: right;
-  text-align: center;
-
-}
- /* video */
-
- video {
-   width: 80vw;
-   padding: 1vw;
-   position: static;
-   vertical-align: middle;
-   float: left;
- }
-
-
-@media (min-width: 851px){
-  video {
-    width: 60em;
-  }
-
-  .VideoBox{
-       margin-bottom: 8em;
-       padding-left: 2em;
-       padding-right: 2em;
-       padding-bottom: 30em;
-
-     }
-     .VideoBox p {
-       vertical-align: bottom;
-       float: right;
-       text-align: center;
-
-     }
-}
-
-/* mobile video */
- @media (max-width: 850px) {
-  .VideoBox{
-    height: 25em;
-  }
-  video {
-   height: 15em;
-   position: static;
-   width: 100%;
-  }
-  .VideoBox p {
-    vertical-align: top;
-    float: right;
-    text-align: center;
-
-  }
 }
 
 
