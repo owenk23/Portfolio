@@ -1,246 +1,13 @@
-/* Navigation css */
-ul.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-
-
-}
-
-
-
- @media (max-width: 850px) {
-   ul.nav {
-     position: relative;
-   }
-   li.nav{
-     padding-left: 5em;
-   }
-  li.button{
-   visibility: visible;
- }
-}
-li.nav {
-  float: right;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  font-stretch: ultra-expanded;
-}
-
-li.name{
-  float left;
-  display: block;
+/* section boxes */
+.CVsection{
   color: white;
-  text-align: left;
-  padding: 1em 3em;
-  text-decoration: none!important;
-  font-size: 1.5em;
-}
-li.name:link{
-  text-decoration: none!important;
-
-}
-
-li.button{
-  visibility: hidden;
-}
-
-
-li.nav a  {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1em 3em;
-  text-decoration: none;
-}
-
-
-
-
-/* This is the control for when the mouse hovers over */
-li.nav:hover {
-  background-color: Black;
-}
-
-/* text display */
-
-body {
-
-   background-image: url("imagebg.jpeg");
-   color: white;
-   background-color: #07194E;
-   background-repeat: no-repeat, repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   margin: 0;
-   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-   font-style: normal;
-   font-synthesis: none;
-   font-weight: normal;
-}
-
-
-p {
-  color: white;
-  padding: 20px 20px 0px 0;
-  /* padding-left: 20em;
-  padding-right: 20em; */
-  opacity: 1;
-  padding-left:20vw;
-  padding-right:20vw
-
-}
-@media (max-width: 850px){
-  p{
-    padding: 1em;
-  }
-}
-#box {
-  font-family: "Noto Sans", sans-serif;
-  color: black;
-  /* padding-left: 90px; */
-  padding-left: 0em;
-  padding-right: 0em;
-  opacity: 1;
-
-
-
-}
-
-h1 {
-
-  /* DESKTOP VIEW */
-padding-top: 15%;
-font-size: 5em;
-text-align: center;
-position: sticky;
-
-}
-.exclamation-word{
-  text-decoration: underline;
-
-  background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color:transparent
-
-
-}
-
-
-/* MOBILE VIEW */
-@media (max-width: 850px) {
-  h1{
-   font-size: 2em;
- }
-}
-
-h2 {
-
-  font-family: "Noto Sans", sans-serif;
-  color: white;
-}
-
-h3 {
-  font-family: "Noto Sans", sans-serif;
-  color: white;
-  text-align: center;
-  background-color: #333;
-  color: white;
-}
-
-
-
-
-/* for discovery log bubles and formating only */
-/* Blue date bubble css control */
-
-
-li.log span {
-  display: inline-block;
-  font-weight: 800;
-  width: 9em;
-  height: 2em;
-  text-align: center;
-  line-height: 2em;
-  border-radius: 1em;
-  background: #00AED9;
-  color: white;
-  position: relative;
-}
-
-li.log {
-  list-style-type: none;
-  text-align: left;
-}
-
-
-/* standard text */
-h2 {
-text-align: center;
-color: white;
-}
-
-li.p {
-  font-family: "Noto Sans", sans-serif;
-  color: white;
-  /* padding-left: 90px; */
-
-}
-
-
-
-
-
-
-
-
-/* Gray boxes */
-.box{
-     text-align: center;
      font-family: arial;
-     font-size: 20px;
      position: relative;
-     margin-left: 10vw;
-     width: 75vw;
-     margin-top: 4em;
-     border: 3px solid white;
-     background-color: #6E6E6E;
-     padding-left: 2em;
-     padding-right: 2em;
+     border: 3px solid rgb(255, 255, 255);
+     background-color: #0376fb;
 }
-
-
-
-img {
-  padding: 1em;
-  height: 15em;
-}
-
-/* Mobile alterations to image */
-@media (max-width: 850px) {
-  img{
-    width: 60%;
-  }
-  .box{
-    width: 99%;
-    left: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-
-
 
 /* footer css */
-
-
 footer{
       margin-top: 3em;
       font-family: arial;
@@ -248,14 +15,78 @@ footer{
       position: relative;
       padding-top: 2em;
       border: 0.3em solid white;
-      background-color: #6E6E6E;
+      background-color: rgb(1, 153, 255);
 
       padding-left: 2em;
       padding-right: 2em;
 
 }
 
+/* SMALL NAV CSS */
+/* Style the navigation menu */
+.smallNav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
-em {
-  text-decoration: underline!important;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.smallNav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.smallNav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.smallNav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.smallNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+
+
+.CVsection h1{
+  text-align: center;
+}
+
+.imageScroll{
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+
+.outlined {
+  text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
 }

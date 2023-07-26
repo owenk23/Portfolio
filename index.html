@@ -1,41 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=0.75">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
   <title> Owen's Website</title>
 </head>
 
 <body>
-  <div class="bg-image"></div>
+
+<!-- Top Navigation Menu -->
+<div class="smallNav">
+  <a href="#home" class="active">Owen Kempton</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="personalprojects.html">Summary</a>
+    <a href="about.html">Skills</a>
+    <a href="about.html">Employment History</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 
-  <ul class = "nav">
-    <li class = "button"><img src="iu.png" alt="Expand button">
-    <li class = "nav"><a href="universityprojects.html">University Projects</a></li>
-    <li class = "nav"><a href="3dprintprojects.html">3D Print Projects</a></li>
-    <li class = "nav"><a href="personalprojects.html">Personal Projects</a></li>
-    <li class = "nav"><a href="about.html">About</a></li>
-    <li class = "name"><a href="index.html">Owen Kempton</a></li>
-  </ul>
-<h1> Welcome to
-<span class ="exclamation-word">
+  <section id = "summary" class = "CVsection">
+    <h1> Summary </h1>
+    A motivated, forward facing individual with a passion for technology. Looking for a role in software & systems development, I am keen to dive in to the technology & software industry to collaborate and contribute to future products and services. I have experience in software development and product development. Able to effectively self-manage independent projects and collaborate well in a team.
 
+  </section>
 
-<em>  my </em>
+  <section id = "skillsSection" class = "CVsection outlined">
+    <h1> Skills </h1>
+    <div id="skillCarousel" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/agile.png" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>Agile software development</h5>
+            <p>Use of agile tools such as Zen hub and Jira. Advocated for the adoption of agile at my department at BAE Systems.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/iosDev.jpeg" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>iOS App development</h5>
+            <p>I have experience of using xCode and Swift to develop a mobile application. In University I developed my own app for my final year project. This app used GPS to log how often you spent at work and estimated your take home pay.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/innovation.jpg" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>Idea and concept development</h5>
+            <p>I have experience in taking project concepts and ideas and develop them in to a future project</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/node.js.jpeg" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>Node.js</h5>
+            <p>I have experience of using Node.JS in previous employment and education. Maintaining and building applications for the web.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/infraTech.jpeg" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>Infrastructure technologies</h5>
+            <p>Working with multiple technologies in previous roles such as Linux, VMWare VSphere and Jenkins.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#skillCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#skillCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-</span>
-website </h1>
-  <h2> Website under construction - Enjoy your stay!</h2>
-  <section class = "box">
-    <h2>About me</h2>
-    I am a second year computer science student with interests in science and technology.
+  </section>
+<!-- Employment History -->
+  <section id = "employmentHistorySection" class = "CVsection outlined">
+    <h1> Employment History </h1>
+    <div id="employmentCarousel" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#employmentCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#employmentCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/innoLabs.jpeg" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>BAE Systems - Innovation Labs</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/ibm.jpeg" class="d-block w-100 imageScroll" alt="...">
+          <div class="carousel-caption d-sm-block">
+            <h5>IBM - API Connect Infrastructure Squad</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#employmentCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#employmentCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <section id = "educationHistory" class = "CVsection outlined">
+    <h1> Education History </h1>
+    <div id="educationCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100 imageScroll">
+          <div class="carousel-caption d-sm-block">
+            <h5>BSc Hons Computer Science - Univeristy of Portsmouth</h5>
+            <p>Notable achivements include:
+              Working as a team to design and plan a network install for a festival
+              Create a web application in Java EE for an online book store
+              Create and present a mobile app as part of my university project
+              Learnt Python through classwork and projects
+              Created an iOS app to manage time and pay at work</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
   </section>
 
 
+
   <footer>
-    Thanks for visiting. Website revision v2.0</footer>
+    Owen Kempton - 2023 - Image credits to respective owners
+  </footer>
 </body>
 
 </html>
