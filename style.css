@@ -29,7 +29,6 @@ footer{
 /* Style the navigation menu */
 .smallNav {
   overflow: hidden;
-  position: sticky;
   background-color: #333;
   top: 0;
 }
