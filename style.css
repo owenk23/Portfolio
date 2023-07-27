@@ -101,3 +101,19 @@ ul{
 p {
   padding: 1em;
 }
+
+.welcomeSection {
+  height: 80vh;
+  display: flex;
+  text-align: center;
+}
+
+.welcomeSection h1{
+  display: inline;
+  text-align: center;
+}
+
+.welcomeSection h2{
+  display: inline;
+  text-align: center;
+}
