@@ -18,7 +18,7 @@ function goToSkills() {
 }
 
 function goToEmployment() {
-    console.log("employment")
+    console.log("employmentHistory")
     document.getElementById("employmentHistorySection").scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
@@ -46,7 +46,7 @@ function moveToSection(hash) {
         case "skills" :
             goToSkills();
             break;
-        case "employment" :
+        case "employmentHistory" :
             goToEmployment();
             break;
         case "education":
